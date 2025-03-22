@@ -1,0 +1,68 @@
+/* Dark Theme Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #b0b0b0; /* Light gray text */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    gap: 20px;
+    margin-top: 50px;
+    max-width: 800px;  /* Limits the width of the container */
+    margin: 0 auto;    /* Centers the container horizontally */
+    padding: 20px;     /* Adds padding to the container */
+    flex-wrap: wrap;   /* Allows text and image to wrap if space is not enough */
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text for the title */
+    word-wrap: break-word; /* Ensures text breaks properly */
+}
+
+.profile-text p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Gray text for the paragraph */
+    word-wrap: break-word; /* Ensures text breaks properly */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Custom Dark Navigation */
+.custom-nav {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    padding: 1rem 0;
+    background-color: #1c1c1c; /* Darker background for navigation */
+}
+
+.custom-nav a {
+    color: #b0b0b0; /* Light gray text for navigation links */
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.custom-nav a:hover {
+    color: #ffffff; /* White text on hover */
+}
