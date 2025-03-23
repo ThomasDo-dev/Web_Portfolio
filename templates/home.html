@@ -1,15 +1,34 @@
 {% extends "base.html" %}
 
-{% block title %}
-Home - My Personal Website
-{% endblock %}
-
 {% block content %}
 <div class="profile-container">
-    <img src="{{ url_for('static', filename='profile.jpeg') }}" alt="Thomas's Profile Picture" class="profile-image">
+    <img src="{{ url_for('static', filename='profile.jpeg') }}" alt="Profile Picture" class="profile-image">
+
     <div class="profile-text">
         <h1>Hey, I'm Thomas. I design hardware, write firmware, and build full-stack apps!</h1>
-        <p>This is the homepage where you can learn more about me and my projects.</p>
+
+        <!-- Social Media Icons -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/chickwwn" target="_blank">
+                <img src="{{ url_for('static', filename='instagramicon.png') }}" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/thomas-do-b0b9b5169" target="_blank">
+                <img src="{{ url_for('static', filename='linkedinicon.svg') }}" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/ThomasDo-dev" target="_blank">
+                <img src="{{ url_for('static', filename='githubicon.svg') }}" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Section -->
+<div class="blog-section">
+    <h2>Recent Blog Posts</h2>
+    <div class="blog-post">
+        <h3>My Journey into Full-Stack Development</h3>
+        <p>Learn about my transition into full-stack development and what I've learned so far...</p>
+        <a href="/play" class="read-more">Read More</a>
     </div>
 </div>
 {% endblock %}

@@ -1,68 +1,121 @@
-/* Dark Theme Styles */
+/* General Body Styles */
 body {
-    background-color: #121212; /* Dark background */
+    background-color: #121212; /* Black background */
     color: #b0b0b0; /* Light gray text */
+    font-family: Arial, sans-serif; /* Add default font for body text */
 }
 
+/* Profile Section */
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Aligns content to the left */
-    gap: 20px;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
     margin-top: 50px;
-    max-width: 800px;  /* Limits the width of the container */
-    margin: 0 auto;    /* Centers the container horizontally */
-    padding: 20px;     /* Adds padding to the container */
-    flex-wrap: wrap;   /* Allows text and image to wrap if space is not enough */
+    max-width: 800px; /* Prevents the section from getting too wide */
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap; /* Allows text to move below image on smaller screens */
 }
 
 .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+.profile-text {
+    flex: 1; /* Allows the text to take up remaining space */
+    max-width: 500px; /* Ensures text wraps at a reasonable width */
 }
 
 .profile-text h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #ffffff; /* White text for the title */
-    word-wrap: break-word; /* Ensures text breaks properly */
 }
 
 .profile-text p {
     font-size: 1rem;
-    color: #b0b0b0; /* Gray text for the paragraph */
-    word-wrap: break-word; /* Ensures text breaks properly */
+    color: #b0b0b0;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        text-align: center;
-    }
-
-    .profile-image {
-        margin-bottom: 20px;
-    }
+/* Social Media Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
 }
 
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s; /* Smooth scale effect */
+}
 
-/* Custom Dark Navigation */
+.social-links img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Navigation Bar Styles */
 .custom-nav {
     display: flex;
-    justify-content: center; /* Center the links horizontally */
+    justify-content: center; /* Centers navigation links horizontally */
     padding: 1rem 0;
-    background-color: #1c1c1c; /* Darker background for navigation */
+    background-color: #121212; /* Matching black background for navigation */
 }
 
 .custom-nav a {
-    color: #b0b0b0; /* Light gray text for navigation links */
+    color: #b0b0b0; /* Light gray text for links */
     margin: 0 1rem;
     text-decoration: none;
 }
 
 .custom-nav a:hover {
     color: #ffffff; /* White text on hover */
+}
+
+/* Blog Section */
+.blog-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #121212; /* Matching black background for blog section */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center the content */
+}
+
+.blog-post {
+    margin-top: 20px;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4ea8de;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .profile-text {
+        max-width: 90%; /* Allows more width on smaller screens */
+    }
 }
