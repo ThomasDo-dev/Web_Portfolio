@@ -5,18 +5,25 @@
     <img src="{{ url_for('static', filename='profile.jpeg') }}" alt="Profile Picture" class="profile-image">
 
     <div class="profile-text">
-        <h1>Hey, I'm Thomas. I design hardware, write firmware, and build full-stack apps!</h1>
+        <h1><a href="/about" class="profile-link">Hey, I'm Thomas.</a> I design hardware, write firmware, and build full-stack apps!</h1>
 
         <!-- Social Media Icons -->
         <div class="social-links">
+            <a href="https://www.youtube.com/thomasdo" target="_blank">
+                <img src="{{ url_for('static', filename='youtubeicon.svg') }}" alt="YouTube">
+                <span class="social-text">YouTube</span>
+            </a>
             <a href="https://www.instagram.com/chickwwn" target="_blank">
                 <img src="{{ url_for('static', filename='instagramicon.png') }}" alt="Instagram">
+                <span class="social-text">Instagram</span>
             </a>
             <a href="https://www.linkedin.com/in/thomas-do-b0b9b5169" target="_blank">
                 <img src="{{ url_for('static', filename='linkedinicon.svg') }}" alt="LinkedIn">
+                <span class="social-text">LinkedIn</span>
             </a>
             <a href="https://github.com/ThomasDo-dev" target="_blank">
                 <img src="{{ url_for('static', filename='githubicon.svg') }}" alt="GitHub">
+                <span class="social-text">GitHub</span>
             </a>
         </div>
     </div>

@@ -10,69 +10,133 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Space between image and text */
+    gap: 20px; /* Space between the image and text */
     margin-top: 50px;
-    max-width: 800px; /* Prevents the section from getting too wide */
+    max-width: 800px; /* Prevents the section from becoming too wide */
     margin-left: auto;
     margin-right: auto;
-    flex-wrap: wrap; /* Allows text to move below image on smaller screens */
+    flex-wrap: wrap; /* Allows text to wrap below image on smaller screens */
 }
 
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    border-radius: 50%; /* Circular profile image */
+    object-fit: cover; /* Ensures the image fits inside the circle */
 }
 
 .profile-text {
-    flex: 1; /* Allows the text to take up remaining space */
-    max-width: 500px; /* Ensures text wraps at a reasonable width */
+    flex: 1; /* Allows the text to take up the remaining space */
+    max-width: 500px; /* Ensures text doesn't stretch too far */
 }
 
 .profile-text h1 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Ensure the whole text is the same size */
     margin-bottom: 10px;
+}
+
+.profile-text h1 a {
+    color: #ffffff; /* Default color is white */
+    text-decoration: none; /* Remove underline */
+    font-size: inherit; /* Inherit the font size from the parent h1 */
+    transition: color 0.2s ease-in-out; /* Smooth color transition */
+}
+
+.profile-text h1 a:hover {
+    color: #4ea8de; /* Blue color on hover */
 }
 
 .profile-text p {
     font-size: 1rem;
-    color: #b0b0b0;
+    color: #b0b0b0; /* Light gray color for description text */
 }
 
 /* Social Media Links */
 .social-links {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    justify-content: left; /* Center the icons horizontally */
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #b0b0b0; /* Default text color */
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.2s; /* Smooth scale effect */
+    width: 20px; /* Match icon size with the font size */
+    height: 20px; /* Match icon size with the font size */
+    margin-right: 8px; /* Space between icon and text */
 }
 
-.social-links img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+/* Styling the text next to the icons */
+.social-text {
+    font-size: 1rem; /* Adjust text size as needed */
+    color: inherit; /* Inherit color from the link */
+    transition: color 0.2s ease-in-out;
 }
 
-/* Navigation Bar Styles */
+/* Hover Effects for Social Media Links */
+.social-links a:hover .social-text {
+    color: #ffffff; /* Change text color to white on hover */
+}
+
+.social-links a:hover img {
+    transform: none; /* Disable icon size increase on hover */
+}
+
+/* Custom colors for each social media platform */
+.social-links a[href*="youtube"]:hover .social-text {
+    color: #FF0000; /* Red for YouTube*/
+}
+
+.social-links a[href*="instagram"]:hover .social-text {
+    color: #e95950; /* Red Orange for Instagram */
+}
+
+.social-links a[href*="linkedin"]:hover .social-text {
+    color: #0077b5; /* Blue for LinkedIn */
+}
+
+.social-links a[href*="github"]:hover .social-text {
+    color: #ffffff; /* White for GitHub */
+}
+
+
+/* Custom Navigation Bar */
 .custom-nav {
     display: flex;
-    justify-content: center; /* Centers navigation links horizontally */
-    padding: 1rem 0;
-    background-color: #121212; /* Matching black background for navigation */
+    justify-content: space-between; /* Space between the left and right sections */
+    padding: 1rem 2rem;
+    background-color: #121212; /* Dark background for navigation */
+    max-width: 800px; /* Limit the navbar width to match profile section */
+    margin-left: auto; /* Center the navbar */
+    margin-right: auto; /* Center the navbar */
+}
+
+.custom-nav .left {
+    display: flex;
+    align-items: center;
+}
+
+.custom-nav .right {
+    display: flex;
+    gap: 1.5rem; /* Space between the right-side links */
+    align-items: center;
 }
 
 .custom-nav a {
     color: #b0b0b0; /* Light gray text for links */
-    margin: 0 1rem;
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 .custom-nav a:hover {
-    color: #ffffff; /* White text on hover */
+    color: #4ea8de; /* Blue color on hover */
 }
 
 /* Blog Section */
