@@ -173,32 +173,44 @@ body {
 
 .blog-post h3 {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #ffffff; /* White by default */
+    letter-spacing: 1px; /* Increase space between letters */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 10px; /* Space below the title */
 }
 
+/* Make the link inside the title behave like a regular link */
+.blog-post h3 a {
+    color: #ffffff; /* White by default */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for the link */
+.blog-post h3 a:hover {
+    color: #4ea8de; /* Turn blue when hovered */
+}
+
+/* Date and Reading Time Under Title */
+.blog-post .post-meta {
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Light gray color for the date and reading time */
+    margin-bottom: 15px;
+}
+
+/* Blog Post Paragraphs */
 .blog-post p {
     font-size: 1rem;
     color: #b0b0b0; /* Light gray blog post text */
+    line-height: 1.8; /* Increase line height for paragraphs */
+    margin-bottom: 15px; /* Space between paragraphs */
 }
 
-/* Blog Post Title Styling */
-.blog-title {
-    color: #ffffff; /* White text by default */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.5rem;
-    transition: color 0.2s ease-in-out;
-}
-
-/* Hover Effect for Blog Post Title */
-.blog-title:hover {
-    color: #4ea8de; /* Turn blue on hover */
-}
-
-/* Read More Styling */
+/* Read More Link */
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    color: #4ea8de; /* Blue color for read more link */
+    color: #4ea8de;
     text-decoration: none;
 }
 
