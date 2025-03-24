@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="-added YouTube Icon&#10;-nav bar margin added&#10;-added blog section">
+    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="-added padding &#10;-minor changes in style of font and sizing of text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/work.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742774906509</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="-added padding &#10;-minor changes in style of font and sizing of text">
+      <option name="closed" value="true" />
+      <created>1742834562226</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742834562226</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +248,7 @@
     <MESSAGE value="trying to rebase" />
     <MESSAGE value="-added icons&#10;-added blog sections&#10;-changes made to wrapping text and styling" />
     <MESSAGE value="-added YouTube Icon&#10;-nav bar margin added&#10;-added blog section" />
-    <option name="LAST_COMMIT_MESSAGE" value="-added YouTube Icon&#10;-nav bar margin added&#10;-added blog section" />
+    <MESSAGE value="-added padding &#10;-minor changes in style of font and sizing of text" />
+    <option name="LAST_COMMIT_MESSAGE" value="-added padding &#10;-minor changes in style of font and sizing of text" />
   </component>
 </project>

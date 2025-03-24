@@ -1,14 +1,14 @@
 /* General Body Styles */
 body {
-    background-color: #121212; /* Black background */
+    background-color: #121212; /* Dark background */
     color: #b0b0b0; /* Light gray text */
-    font-family: Arial, sans-serif; /* Add default font for body text */
+    font-family: Helvetica Neue, sans-serif;
 }
 
 /* Profile Section */
 .profile-container {
-    max-width: 47.5rem; /* Updated max width */
-    padding: 1.5rem 1.45rem; /* Updated padding */
+    max-width: 47.5rem; /* Updated max-width */
+    padding: 1.5rem 1.45rem; /* Padding for spacing */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -17,31 +17,31 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
 }
 
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Circular profile image */
-    object-fit: cover; /* Ensures the image fits inside the circle */
-    border: 3px solid #808080; /* Adds a subtle gray border */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensures image covers the circle */
+    border: 3px solid #808080; /* Subtle border around the image */
 }
 
 .profile-text {
-    flex: 1; /* Allows the text to take up the remaining space */
-    max-width: 500px; /* Ensures text doesn't stretch too far */
+    flex: 1; /* Makes the text section take up available space */
+    max-width: 500px; /* Restricts text width */
 }
 
 .profile-text h1 {
-    font-size: 1.5rem; /* Ensure the whole text is the same size */
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .profile-text h1 a {
-    color: #ffffff; /* Default color is white */
+    color: #ffffff; /* White text by default */
     text-decoration: none; /* Remove underline */
-    font-size: inherit; /* Inherit the font size from the parent h1 */
+    font-size: inherit; /* Inherit font size from parent */
     transition: color 0.2s ease-in-out; /* Smooth color transition */
 }
 
@@ -51,7 +51,7 @@ body {
 
 .profile-text p {
     font-size: 1rem;
-    color: #b0b0b0; /* Light gray color for description text */
+    color: #b0b0b0; /* Light gray description text */
 }
 
 /* Social Media Links */
@@ -59,27 +59,26 @@ body {
     display: flex;
     gap: 30px;
     margin-top: 20px;
-    flex-wrap: wrap; /* Allow icons to wrap to the next line */
-    justify-content: left; /* Center the icons horizontally */
+    flex-wrap: wrap; /* Allows icons to wrap */
+    justify-content: flex-start; /* Aligns icons to the left */
 }
 
 .social-links a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #b0b0b0; /* Default text color */
+    color: #b0b0b0; /* Default link color */
 }
 
 .social-links img {
-    width: 20px; /* Match icon size with the font size */
-    height: 20px; /* Match icon size with the font size */
+    width: 20px; /* Set icon size */
+    height: 20px; /* Set icon size */
     margin-right: 8px; /* Space between icon and text */
 }
 
-/* Styling the text next to the icons */
 .social-text {
-    font-size: 1rem; /* Adjust text size as needed */
-    color: inherit; /* Inherit color from the link */
+    font-size: 1rem;
+    color: inherit; /* Inherit color from parent link */
     transition: color 0.2s ease-in-out;
 }
 
@@ -89,76 +88,83 @@ body {
 }
 
 .social-links a:hover img {
-    transform: none; /* Disable icon size increase on hover */
+    transform: none; /* Disable icon size change on hover */
 }
 
-/* Custom colors for each social media platform */
+/* Custom colors for social platforms */
 .social-links a[href*="youtube"]:hover .social-text {
-    color: #FF0000; /* Red for YouTube*/
+    color: #FF0000; /* YouTube red */
 }
 
 .social-links a[href*="instagram"]:hover .social-text {
-    color: #e95950; /* Red Orange for Instagram */
+    color: #e95950; /* Instagram red-orange */
 }
 
 .social-links a[href*="linkedin"]:hover .social-text {
-    color: #0077b5; /* Blue for LinkedIn */
+    color: #0077b5; /* LinkedIn blue */
 }
 
 .social-links a[href*="github"]:hover .social-text {
-    color: #ffffff; /* White for GitHub */
+    color: #ffffff; /* GitHub white */
 }
-
 
 /* Custom Navigation Bar */
 .custom-nav {
-    max-width: 47.5rem; /* Ensures the same width as profile and blog sections */
-    padding: 1.5rem 1.45rem; /* Ensures consistent padding */
+    font-family: inherit; /* Inherit the font from the body */
+    max-width: 47.5rem;
+    padding: 1.5rem 1.45rem;
     display: flex;
     justify-content: space-between;
     background-color: #121212;
-    margin-left: auto; /* Centers the navbar */
-    margin-right: auto; /* Centers the navbar */
-    width: 100%; /* Ensures it doesn't overflow */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
+/* Left side of the navbar */
 .custom-nav .left {
     display: flex;
     align-items: center;
+    font-weight: 500; /* Make the left-side text thicker */
+    letter-spacing: 2px; /* Add space between each letter */
 }
 
+/* Right side of the navbar */
 .custom-nav .right {
     display: flex;
-    gap: 1.5rem; /* Space between the right-side links */
+    gap: 1.5rem;
     align-items: center;
+    font-weight: 400; /* Thinner font for right-side text (default) */
 }
 
+/* Nav links */
 .custom-nav a {
-    color: #b0b0b0; /* Light gray text for links */
+    color: #b0b0b0; /* Light gray text for nav links */
     text-decoration: none;
     font-size: 1.1rem;
 }
 
+/* Hover effects */
 .custom-nav a:hover {
     color: #4ea8de; /* Blue color on hover */
 }
 
 /* Blog Section */
 .blog-section {
-    max-width: 47.5rem; /* Updated max width */
-    padding: 1.5rem 1.45rem; /* Updated padding */
+    max-width: 47.5rem;
+    padding: 1.5rem 1.45rem;
     margin-top: 50px;
     background-color: #121212;
     border-radius: 10px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 100%; /* Ensures it doesn't overflow */
+    width: 100%;
 }
 
 .blog-section h2 {
     font-size: 1rem;
-    color: #ffffff;
+    color: #ffffff; /* White for section titles */
 }
 
 .blog-post {
@@ -172,28 +178,81 @@ body {
 
 .blog-post p {
     font-size: 1rem;
-    color: #b0b0b0;
+    color: #b0b0b0; /* Light gray blog post text */
 }
 
+/* Blog Post Title Styling */
+.blog-title {
+    color: #ffffff; /* White text by default */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Hover Effect for Blog Post Title */
+.blog-title:hover {
+    color: #4ea8de; /* Turn blue on hover */
+}
+
+/* Read More Styling */
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    color: #4ea8de;
+    color: #4ea8de; /* Blue color for read more link */
     text-decoration: none;
 }
 
 .read-more:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; /* Underline the read more link when hovered */
+}
+
+/* About Section */
+.about-section {
+    max-width: 47.5rem;
+    padding: 1.5rem 1.45rem;
+    margin-top: 50px;
+    background-color: #121212; /* Dark background similar to the blog section */
+    border-radius: 10px; /* Rounded corners */
+    text-align: left; /* Align text to the left */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* About Section Heading */
+.about-section h1 {
+    font-size: 2rem; /* Larger heading size */
+    color: #ffffff; /* White text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* About Section Paragraphs */
+.about-section p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Light gray text for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 15px; /* Space between paragraphs */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     .profile-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack elements vertically */
         text-align: center; /* Center text on smaller screens */
     }
 
     .profile-text {
-        max-width: 90%; /* Allows more width on smaller screens */
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+
+    .custom-nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center; /* Center items in navbar */
+    }
+
+    .custom-nav .right {
+        flex-direction: column; /* Stack navbar links vertically */
+        align-items: center; /* Center navbar links */
+        gap: 10px; /* Reduce gap between links */
     }
 }
