@@ -2,13 +2,14 @@
 body {
     background-color: #000000; /* Dark background */
     color: #b0b0b0; /* Light gray text */
-    font-family: Helvetica Neue, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Profile Section */
 .profile-container {
-    max-width: 47.5rem; /* Updated max-width */
-    padding: 1.5rem 1.45rem; /* Padding for spacing */
+    font-family: Helvetica Neue, sans-serif;
+    max-width: 47.5rem;
+    padding: 1.5rem 1.45rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -17,7 +18,7 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .profile-image {
@@ -127,6 +128,7 @@ body {
 
 /* Custom Navigation Bar */
 .navbar {
+    font-family: Helvetica Neue, sans-serif;
     background-color: #000000 !important; /* Force black background */
     max-width: 48rem; /* Set the same width as the profile */
     padding: 1rem 1.45rem; /* Adjust padding for proper spacing */
@@ -255,7 +257,7 @@ body {
     max-width: 47.5rem;
     padding: 1.5rem 1.45rem;
     margin-top: 50px;
-    background-color: #121212; /* Dark background similar to the blog section */
+    background-color: #000000; /* Dark background similar to the blog section */
     border-radius: 10px; /* Rounded corners */
     text-align: left; /* Align text to the left */
     margin-left: auto;

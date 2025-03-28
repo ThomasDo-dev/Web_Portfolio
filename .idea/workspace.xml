@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="- adjusted padding for profile to blog&#10;-adjusted padding for left of navbar brand name">
-      <change afterPath="$PROJECT_DIR$/static/instagramicon.svg" afterDir="false" />
+    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="-changed jpeg icon to svg&#10;-change background to true black of #000000">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/githubicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/githubicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/instagramicon.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743121233506</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="-changed jpeg icon to svg&#10;-change background to true black of #000000">
+      <option name="closed" value="true" />
+      <created>1743123932823</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743123932823</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,6 +293,7 @@
     <MESSAGE value="-added content to homepage" />
     <MESSAGE value="-added hamburger&#10;-added different style and layout for profile for different screen dimensions" />
     <MESSAGE value="- adjusted padding for profile to blog&#10;-adjusted padding for left of navbar brand name" />
-    <option name="LAST_COMMIT_MESSAGE" value="- adjusted padding for profile to blog&#10;-adjusted padding for left of navbar brand name" />
+    <MESSAGE value="-changed jpeg icon to svg&#10;-change background to true black of #000000" />
+    <option name="LAST_COMMIT_MESSAGE" value="-changed jpeg icon to svg&#10;-change background to true black of #000000" />
   </component>
 </project>
