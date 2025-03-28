@@ -59,8 +59,25 @@ body {
     display: flex;
     gap: 30px;
     margin-top: 20px;
-    flex-wrap: wrap; /* Allows icons to wrap */
     justify-content: flex-start; /* Aligns icons to the left */
+    flex-wrap: wrap; /* Allows icons to wrap */
+}
+
+/* By default, keep the icons side by side on tablets and larger screens */
+@media (min-width: 1024px) {
+    .social-links {
+        flex-direction: row; /* Icons appear next to each other (default for tablet and larger) */
+        align-items: center; /* Align icons horizontally */
+    }
+}
+
+/* Stack icons vertically on small screens (less than 1024px) */
+@media (max-width: 1023px) {
+    .social-links {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center icons horizontally when stacked */
+        gap: 15px; /* Adjust the gap between icons when stacked */
+    }
 }
 
 .social-links a {
@@ -109,44 +126,58 @@ body {
 }
 
 /* Custom Navigation Bar */
-.custom-nav {
-    font-family: inherit; /* Inherit the font from the body */
-    max-width: 47.5rem;
-    padding: 1.5rem 1.45rem;
-    display: flex;
-    justify-content: space-between;
-    background-color: #121212;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.navbar {
+    background-color: #121212 !important; /* Force black background */
+    max-width: 47.5rem; /* Set the same width as the profile */
+    padding: 1rem 1.45rem; /* Adjust padding for proper spacing */
+    margin: 0 auto; /* Center navbar */
+    width: 100%; /* Ensure navbar takes full width up to max-width */
+    border-radius: 0; /* Remove border radius if not needed */
 }
 
-/* Left side of the navbar */
-.custom-nav .left {
-    display: flex;
-    align-items: center;
-    font-weight: 500; /* Make the left-side text thicker */
-    letter-spacing: 2px; /* Add space between each letter */
+/* Left side of the navbar (Brand stays visible) */
+.navbar-brand {
+    font-weight: 500; /* Thicker brand text */
+    letter-spacing: 2px; /* Add space between letters */
+    color: #b0b0b0 !important; /* Set color to light gray for the brand */
+    text-decoration: none; /* Remove any underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
 }
 
-/* Right side of the navbar */
-.custom-nav .right {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    font-weight: 400; /* Thinner font for right-side text (default) */
+/* Hover effect for the brand (Thomas Do) */
+.navbar-brand:hover {
+    color: #4ea8de !important; /* Change color to blue on hover */
 }
 
-/* Nav links */
-.custom-nav a {
-    color: #b0b0b0; /* Light gray text for nav links */
-    text-decoration: none;
+/* Right side of the navbar (Links that will be hamburgered on small screens) */
+.navbar-nav .nav-link {
+    color: #b0b0b0 !important; /* Light gray text for nav links */
     font-size: 1.1rem;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Hover effects */
-.custom-nav a:hover {
-    color: #4ea8de; /* Blue color on hover */
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+    color: #4ea8de !important; /* Blue color on hover */
+}
+
+/* Adjust Navbar Button (Hamburger Menu) */
+.navbar-toggler {
+    border: none; /* Remove border from button */
+}
+
+/* Align navbar items to the right on large screens */
+.navbar-collapse {
+    display: flex; /* Make the container use flexbox */
+    justify-content: flex-end; /* Align the items to the right when expanded */
+    align-items: center; /* Vertically center the items */
+}
+
+/* Align navbar items to the right */
+.navbar-nav {
+    display: flex; /* Display links horizontally */
+    gap: 10px; /* Space between the links */
+    align-items: center; /* Vertically center the links */
 }
 
 /* Blog Section */
@@ -247,24 +278,17 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 1023px) {
     .profile-container {
         flex-direction: column; /* Stack elements vertically */
         text-align: center; /* Center text on smaller screens */
     }
 
+    .profile-image {
+        margin-bottom: 20px; /* Adds space between image and text when stacked */
+    }
+
     .profile-text {
-        max-width: 90%; /* Allow more width on smaller screens */
+        max-width: 100%; /* Allow text section to take up full width */
+        margin-top: 15px; /* Add margin to top of text */
     }
-
-    .custom-nav {
-        flex-direction: column; /* Stack navbar items vertically */
-        align-items: center; /* Center items in navbar */
-    }
-
-    .custom-nav .right {
-        flex-direction: column; /* Stack navbar links vertically */
-        align-items: center; /* Center navbar links */
-        gap: 10px; /* Reduce gap between links */
-    }
-}
