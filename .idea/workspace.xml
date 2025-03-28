@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="-added hamburger&#10;-added different style and layout for profile for different screen dimensions">
+    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="- adjusted padding for profile to blog&#10;-adjusted padding for left of navbar brand name">
+      <change afterPath="$PROJECT_DIR$/static/instagramicon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/githubicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/githubicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/instagramicon.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743120597291</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- adjusted padding for profile to blog&#10;-adjusted padding for left of navbar brand name">
+      <option name="closed" value="true" />
+      <created>1743121233506</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743121233506</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +287,7 @@
     <MESSAGE value="- added styling and content for about me page&#10;- added recent posts to have 3 sections for the most recent blogs&#10;- minor changes in style of font and sizing of text" />
     <MESSAGE value="-added content to homepage" />
     <MESSAGE value="-added hamburger&#10;-added different style and layout for profile for different screen dimensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="-added hamburger&#10;-added different style and layout for profile for different screen dimensions" />
+    <MESSAGE value="- adjusted padding for profile to blog&#10;-adjusted padding for left of navbar brand name" />
+    <option name="LAST_COMMIT_MESSAGE" value="- adjusted padding for profile to blog&#10;-adjusted padding for left of navbar brand name" />
   </component>
 </project>
