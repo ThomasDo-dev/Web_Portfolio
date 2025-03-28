@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="-added content to homepage">
-      <changelist_data name="ThomasDo-dev" email="thomas.tungdoviet@gmail.com" automatic="false" />
+    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="-added hamburger&#10;-added different style and layout for profile for different screen dimensions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742840635594</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="-added hamburger&#10;-added different style and layout for profile for different screen dimensions">
+      <option name="closed" value="true" />
+      <created>1743120597291</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743120597291</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +274,7 @@
     <MESSAGE value="-added padding &#10;-minor changes in style of font and sizing of text" />
     <MESSAGE value="- added styling and content for about me page&#10;- added recent posts to have 3 sections for the most recent blogs&#10;- minor changes in style of font and sizing of text" />
     <MESSAGE value="-added content to homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="-added content to homepage" />
+    <MESSAGE value="-added hamburger&#10;-added different style and layout for profile for different screen dimensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="-added hamburger&#10;-added different style and layout for profile for different screen dimensions" />
   </component>
 </project>

@@ -128,7 +128,7 @@ body {
 /* Custom Navigation Bar */
 .navbar {
     background-color: #121212 !important; /* Force black background */
-    max-width: 47.5rem; /* Set the same width as the profile */
+    max-width: 48rem; /* Set the same width as the profile */
     padding: 1rem 1.45rem; /* Adjust padding for proper spacing */
     margin: 0 auto; /* Center navbar */
     width: 100%; /* Ensure navbar takes full width up to max-width */
@@ -138,10 +138,11 @@ body {
 /* Left side of the navbar (Brand stays visible) */
 .navbar-brand {
     font-weight: 500; /* Thicker brand text */
-    letter-spacing: 2px; /* Add space between letters */
+    letter-spacing: 4px; /* Add space between letters */
     color: #b0b0b0 !important; /* Set color to light gray for the brand */
     text-decoration: none; /* Remove any underline */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    margin-left: -12.5px;
 }
 
 /* Hover effect for the brand (Thomas Do) */
@@ -184,7 +185,7 @@ body {
 .blog-section {
     max-width: 47.5rem;
     padding: 1.5rem 1.45rem;
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: #121212;
     border-radius: 10px;
     text-align: left;
