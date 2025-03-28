@@ -24,14 +24,14 @@ body {
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Circular image */
-    object-fit: cover; /* Ensures image covers the circle */
-    border: 3px solid #808080; /* Subtle border around the image */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #808080;
 }
 
 .profile-text {
-    flex: 1; /* Makes the text section take up available space */
-    max-width: 500px; /* Restricts text width */
+    flex: 1;
+    max-width: 500px;
 }
 
 .profile-text h1 {
@@ -40,19 +40,19 @@ body {
 }
 
 .profile-text h1 a {
-    color: #ffffff; /* White text by default */
-    text-decoration: none; /* Remove underline */
-    font-size: inherit; /* Inherit font size from parent */
-    transition: color 0.2s ease-in-out; /* Smooth color transition */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: inherit;
+    transition: color 0.2s ease-in-out;
 }
 
 .profile-text h1 a:hover {
-    color: #4ea8de; /* Blue color on hover */
+    color: #4ea8de;
 }
 
 .profile-text p {
     font-size: 1rem;
-    color: #b0b0b0; /* Light gray description text */
+    color: #b0b0b0;
 }
 
 /* Social Media Links */
@@ -60,24 +60,24 @@ body {
     display: flex;
     gap: 30px;
     margin-top: 20px;
-    justify-content: flex-start; /* Aligns icons to the left */
-    flex-wrap: wrap; /* Allows icons to wrap */
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-/* By default, keep the icons side by side on tablets and larger screens */
+/* Responsive for larger screens (tablets and up) */
 @media (min-width: 1024px) {
     .social-links {
-        flex-direction: row; /* Icons appear next to each other (default for tablet and larger) */
-        align-items: center; /* Align icons horizontally */
+        flex-direction: row;
+        align-items: center;
     }
 }
 
-/* Stack icons vertically on small screens (less than 1024px) */
+/* Stack icons vertically on smaller screens (less than 1024px) */
 @media (max-width: 1023px) {
     .social-links {
-        flex-direction: column; /* Stack icons vertically */
-        align-items: center; /* Center icons horizontally when stacked */
-        gap: 15px; /* Adjust the gap between icons when stacked */
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 }
 
@@ -85,102 +85,102 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #b0b0b0; /* Default link color */
+    color: #b0b0b0;
 }
 
 .social-links img {
-    width: 20px; /* Set icon size */
-    height: 20px; /* Set icon size */
-    margin-right: 8px; /* Space between icon and text */
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
 
 .social-text {
     font-size: 1rem;
-    color: inherit; /* Inherit color from parent link */
+    color: inherit;
     transition: color 0.2s ease-in-out;
 }
 
 /* Hover Effects for Social Media Links */
 .social-links a:hover .social-text {
-    color: #ffffff; /* Change text color to white on hover */
+    color: #ffffff;
 }
 
 .social-links a:hover img {
-    transform: none; /* Disable icon size change on hover */
+    transform: none;
 }
 
 /* Custom colors for social platforms */
 .social-links a[href*="youtube"]:hover .social-text {
-    color: #FF0000; /* YouTube red */
+    color: #FF0000;
 }
 
 .social-links a[href*="instagram"]:hover .social-text {
-    color: #e95950; /* Instagram red-orange */
+    color: #e95950;
 }
 
 .social-links a[href*="linkedin"]:hover .social-text {
-    color: #0077b5; /* LinkedIn blue */
+    color: #0077b5;
 }
 
 .social-links a[href*="github"]:hover .social-text {
-    color: #ffffff; /* GitHub white */
+    color: #ffffff;
 }
 
 /* Custom Navigation Bar */
 .navbar {
     font-family: Helvetica Neue, sans-serif;
-    background-color: #000000 !important; /* Force black background */
-    max-width: 48rem; /* Set the same width as the profile */
-    padding: 1rem 1.45rem; /* Adjust padding for proper spacing */
-    margin: 0 auto; /* Center navbar */
-    width: 100%; /* Ensure navbar takes full width up to max-width */
-    border-radius: 0; /* Remove border radius if not needed */
+    background-color: #000000 !important;
+    max-width: 48rem;
+    padding: 1rem 1.45rem;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0;
 }
 
 /* Left side of the navbar (Brand stays visible) */
 .navbar-brand {
-    font-weight: 500; /* Thicker brand text */
-    letter-spacing: 4px; /* Add space between letters */
-    color: #b0b0b0 !important; /* Set color to light gray for the brand */
-    text-decoration: none; /* Remove any underline */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #b0b0b0 !important;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
     margin-left: -12.5px;
 }
 
-/* Hover effect for the brand (Thomas Do) */
+/* Hover effect for the brand */
 .navbar-brand:hover {
-    color: #4ea8de !important; /* Change color to blue on hover */
+    color: #4ea8de !important;
 }
 
 /* Right side of the navbar (Links that will be hamburgered on small screens) */
 .navbar-nav .nav-link {
-    color: #b0b0b0 !important; /* Light gray text for nav links */
+    color: #b0b0b0 !important;
     font-size: 1.1rem;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    transition: color 0.3s ease;
 }
 
 /* Hover effect for nav links */
 .navbar-nav .nav-link:hover {
-    color: #4ea8de !important; /* Blue color on hover */
+    color: #4ea8de !important;
 }
 
 /* Adjust Navbar Button (Hamburger Menu) */
 .navbar-toggler {
-    border: none; /* Remove border from button */
+    border: none;
 }
 
 /* Align navbar items to the right on large screens */
 .navbar-collapse {
-    display: flex; /* Make the container use flexbox */
-    justify-content: flex-end; /* Align the items to the right when expanded */
-    align-items: center; /* Vertically center the items */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* Align navbar items to the right */
 .navbar-nav {
-    display: flex; /* Display links horizontally */
-    gap: 10px; /* Space between the links */
-    align-items: center; /* Vertically center the links */
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 /* Blog Section */
@@ -198,7 +198,7 @@ body {
 
 .blog-section h2 {
     font-size: 1.5rem;
-    color: #ffffff; /* White for section titles */
+    color: #ffffff;
 }
 
 .blog-post {
@@ -207,37 +207,37 @@ body {
 
 .blog-post h3 {
     font-size: 1.5rem;
-    color: #ffffff; /* White by default */
-    letter-spacing: 2px; /* Increase space between letters */
-    line-height: 1.6; /* Increase line height for better readability */
-    margin-bottom: 10px; /* Space below the title */
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-/* Make the link inside the title behave like a regular link */
+/* Blog post link */
 .blog-post h3 a {
-    color: #ffffff; /* White by default */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Hover effect for the link */
+/* Hover effect for the blog post link */
 .blog-post h3 a:hover {
-    color: #4ea8de; /* Turn blue when hovered */
+    color: #4ea8de;
 }
 
 /* Date and Reading Time Under Title */
 .blog-post .post-meta {
     font-size: 0.9rem;
-    color: #b0b0b0; /* Light gray color for the date and reading time */
+    color: #b0b0b0;
     margin-bottom: 15px;
 }
 
 /* Blog Post Paragraphs */
 .blog-post p {
     font-size: 1rem;
-    color: #b0b0b0; /* Light gray blog post text */
-    line-height: 1.8; /* Increase line height for paragraphs */
-    margin-bottom: 15px; /* Space between paragraphs */
+    color: #b0b0b0;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
 /* Read More Link */
@@ -249,17 +249,17 @@ body {
 }
 
 .read-more:hover {
-    text-decoration: underline; /* Underline the read more link when hovered */
+    text-decoration: underline;
 }
 
 /* About Section */
 .about-section {
-    max-width: 47.5rem;
+    max-width: 48rem;
     padding: 1.5rem 1.45rem;
     margin-top: 50px;
-    background-color: #000000; /* Dark background similar to the blog section */
-    border-radius: 10px; /* Rounded corners */
-    text-align: left; /* Align text to the left */
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -267,31 +267,97 @@ body {
 
 /* About Section Heading */
 .about-section h1 {
-    font-size: 2rem; /* Larger heading size */
-    color: #ffffff; /* White text */
-    margin-bottom: 20px; /* Space below the heading */
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 /* About Section Paragraphs */
 .about-section p {
     font-size: 1rem;
-    color: #b0b0b0; /* Light gray text for paragraphs */
-    line-height: 1.6; /* Line height for better readability */
-    margin-bottom: 15px; /* Space between paragraphs */
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+/* Blog Section */
+.blog-section {
+    max-width: 48rem;
+    padding: 1.5rem 1.45rem;
+    margin-top: 50px;
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Blog Section Heading */
+.blog-section h1 {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Blog Section Paragraphs */
+.blog-section p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+/* Play Section */
+.play-section {
+    max-width: 48rem;
+    padding: 1.5rem 1.45rem;
+    margin-top: 50px;
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Play Section Heading */
+.play-section h1 {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Play Section Paragraphs */
+.play-section p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
 }
 
 /* Responsive Design */
 @media (max-width: 1023px) {
     .profile-container {
-        flex-direction: column; /* Stack elements vertically */
-        text-align: center; /* Center text on smaller screens */
+        flex-direction: column;
+        text-align: center;
     }
 
     .profile-image {
-        margin-bottom: 20px; /* Adds space between image and text when stacked */
+        margin-bottom: 20px;
     }
 
     .profile-text {
-        max-width: 100%; /* Allow text section to take up full width */
-        margin-top: 15px; /* Add margin to top of text */
+        max-width: 100%;
+        margin-top: 15px;
     }
+}
