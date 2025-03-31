@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="-Created tic tac toe grid in play.html and added styling effect&#10;- Added JS file for interactivity">
+    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="- html script import change file path to correct one">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/tic_tac_toe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/tic_tac_toe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +287,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743419670214</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- Refactor JS to just draw X based on user click first">
+      <option name="closed" value="true" />
+      <created>1743421095500</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1743421095500</updated>
+    </task>
+    <task id="LOCAL-00022" summary="- html script import change file path to correct one">
+      <option name="closed" value="true" />
+      <created>1743421225875</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1743421225875</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,6 +346,8 @@
     <MESSAGE value="-Make other pages to have same layout, structure and style" />
     <MESSAGE value="- change blogs content on front page" />
     <MESSAGE value="-Created tic tac toe grid in play.html and added styling effect&#10;- Added JS file for interactivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Created tic tac toe grid in play.html and added styling effect&#10;- Added JS file for interactivity" />
+    <MESSAGE value="- Refactor JS to just draw X based on user click first" />
+    <MESSAGE value="- html script import change file path to correct one" />
+    <option name="LAST_COMMIT_MESSAGE" value="- html script import change file path to correct one" />
   </component>
 </project>
