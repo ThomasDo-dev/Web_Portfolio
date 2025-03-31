@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="- added 4 functions&#10;  - Cell Click&#10;  - Bot Move&#10;  - Check For wins&#10;  - Restart Game&#10;  &#10;- Issue needs fixing fastclicking bug" />
+    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="- added html to redirect to another url" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +33,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -307,7 +306,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743460604226</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Update Flask app for production deployment&#10;&#10;- Bind to 0.0.0.0 and use dynamic port&#10;- Disable debug mode">
+      <option name="closed" value="true" />
+      <created>1743462428521</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1743462428521</updated>
+    </task>
+    <task id="LOCAL-00025" summary="- added html to redirect to another url">
+      <option name="closed" value="true" />
+      <created>1743463411814</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1743463411814</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,6 +368,8 @@
     <MESSAGE value="- Refactor JS to just draw X based on user click first" />
     <MESSAGE value="- html script import change file path to correct one" />
     <MESSAGE value="- added 4 functions&#10;  - Cell Click&#10;  - Bot Move&#10;  - Check For wins&#10;  - Restart Game&#10;  &#10;- Issue needs fixing fastclicking bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added 4 functions&#10;  - Cell Click&#10;  - Bot Move&#10;  - Check For wins&#10;  - Restart Game&#10;  &#10;- Issue needs fixing fastclicking bug" />
+    <MESSAGE value="Update Flask app for production deployment&#10;&#10;- Bind to 0.0.0.0 and use dynamic port&#10;- Disable debug mode" />
+    <MESSAGE value="- added html to redirect to another url" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added html to redirect to another url" />
   </component>
 </project>
