@@ -1,29 +1,14 @@
-document.addEventListener("DOMContentLoaded"), () => {
+document.addEventListener('DOMContentLoaded', function () {
+    // Select all the cells
     const cells = document.querySelectorAll(".cell");
-    const statusText = document.getElementById("game-status");
-    const restartBtn = document.getElementById("restart-btn");
 
-    let  board = ["","","","","","","","",""];
-    let currentPlay = "X";
-}
-
-cells.forEach(cell => {cell.addEventListener("click", handleClick)});
-
-function handleClick(event){
-    const cell = event.target;
-    const index = cell.dataset.index;
-
-    if (board[index] != "") return;
-
-    board[index] = currentPlayer;
-    cell.textContent = currentPlayer;
-
-    checkWinner();
-    currentPlayer = (currentPlayer === "X") ? "0" : "X"; // "===" check value and type
-}
-
-function checkWinner() {
-    const winningPatterns = [
-
-    ]
-}
+    // Add click event listener to each cell
+    cells.forEach(cell => {
+        cell.addEventListener('click', function () {
+            // Check if the cell is already filled
+            if (cell.textContent === "") {
+                cell.textContent = "X";  // Add "X" in the clicked cell
+            }
+        });
+    });
+});

@@ -376,9 +376,10 @@ body {
 .tic-tac-toe-board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-gap: 5px;
+    grid-template-rows: repeat(3, 100px);
     margin: 20px auto;
     width: max-content;
+    border-spacing: 5px;
 }
 
 /* Cell Styling */
@@ -398,7 +399,6 @@ body {
 /* Hover Effect for Cells */
 .cell:hover {
     background-color: #e0e0e0;  /* Slight hover effect */
-    transform: scale(1.05); /* Slightly enlarge the cell on hover */
 }
 
 /* Marking X and O */
