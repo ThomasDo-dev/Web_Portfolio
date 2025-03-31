@@ -55,6 +55,23 @@ body {
     color: #b0b0b0;
 }
 
+/* Responsive Design */
+@media (max-width: 1023px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .profile-text {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+}
+
 /* Social Media Links */
 .social-links {
     display: flex;
@@ -319,12 +336,13 @@ body {
     max-width: 48rem;
     padding: 1.5rem 1.45rem;
     margin-top: 50px;
-    background-color: #000000;
+    background-color: #000000;  /* Darker background for better contrast */
     border-radius: 10px;
-    text-align: left;
+    text-align: center;  /* Centered text for better appearance */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
 }
 
 /* Play Section Heading */
@@ -333,6 +351,7 @@ body {
     font-size: 2rem;
     color: #ffffff;
     margin-bottom: 20px;
+    text-transform: uppercase; /* Capitalized for emphasis */
 }
 
 /* Play Section Paragraphs */
@@ -345,19 +364,76 @@ body {
     word-spacing: 1px;
 }
 
-/* Responsive Design */
-@media (max-width: 1023px) {
-    .profile-container {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Game Status Text */
+#game-status {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
-    .profile-image {
-        margin-bottom: 20px;
-    }
+/* Tic-Tac-Toe Board */
+.tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: max-content;
+}
 
-    .profile-text {
-        max-width: 100%;
-        margin-top: 15px;
-    }
+/* Cell Styling */
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #444444;  /* Slightly lighter border color */
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #b0b0b0;  /* Light background for cells */
+    transition: background-color 0.3s, transform 0.1s;  /* Smooth effects */
+}
+
+/* Hover Effect for Cells */
+.cell:hover {
+    background-color: #e0e0e0;  /* Slight hover effect */
+    transform: scale(1.05); /* Slightly enlarge the cell on hover */
+}
+
+/* Marking X and O */
+.cell.x {
+    color: #e74c3c; /* Red for X */
+    font-weight: bold;
+}
+
+.cell.o {
+    color: #3498db; /* Blue for O */
+    font-weight: bold;
+}
+
+/* Restart Button */
+#restart-btn {
+    background-color: #2ecc71; /* Green background for restart button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Restart Button Hover Effect */
+#restart-btn:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Responsive Adjustment for Smaller Screens */
+@media (max-width: 600px) {
+    .tic-tac-toe-board {
+        grid-template-columns: repeat(3, 80px);  /* Smaller cells for mobile */
+        grid
 }

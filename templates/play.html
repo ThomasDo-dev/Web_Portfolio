@@ -6,7 +6,30 @@ Play | Thomas Do
 
 {% block content %}
 <div class="play-section">
-    <h1>Play</h1>
-    <p>In progress...</p>
+    <h1>Tic-Tac-Toe</h1>
+    <p>Click on a cell to play.</p>
+
+    <div class="tic-tac-toe-board">
+        <div class="row">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+        </div>
+        <div class="row">
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+        </div>
+        <div class="row">
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+    </div>
+
+    <p id="game-status"></p>
+    <button id="restart-btn">Restart Game</button>
 </div>
+
+<script src="{{ url_for('static', filename='js/tic_tac_toe.js') }}"></script>
 {% endblock %}
