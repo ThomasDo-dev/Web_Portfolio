@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="- added html to redirect to another url" />
+    <list default="true" id="39ddc456-d772-499b-9d29-a2e38971c39c" name="Changes" comment="- added the url in index.html">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -322,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743463411814</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="- added the url in index.html">
+      <option name="closed" value="true" />
+      <created>1743463493560</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1743463493560</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,6 +380,7 @@
     <MESSAGE value="- added 4 functions&#10;  - Cell Click&#10;  - Bot Move&#10;  - Check For wins&#10;  - Restart Game&#10;  &#10;- Issue needs fixing fastclicking bug" />
     <MESSAGE value="Update Flask app for production deployment&#10;&#10;- Bind to 0.0.0.0 and use dynamic port&#10;- Disable debug mode" />
     <MESSAGE value="- added html to redirect to another url" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added html to redirect to another url" />
+    <MESSAGE value="- added the url in index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added the url in index.html" />
   </component>
 </project>
